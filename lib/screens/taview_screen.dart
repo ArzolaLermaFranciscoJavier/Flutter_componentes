@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class TabScreen extends StatefulWidget {
   const TabScreen({super.key});
-  _WidgetState createState() => _WidgetState();
+  _TabScreen createState() => _TabScreen();
 }
 
-class _WidgetState extends State<TabScreen> {
+class _TabScreen extends State<TabScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -15,10 +15,10 @@ class _WidgetState extends State<TabScreen> {
           bottom: TabBar(
             tabs: [
               Tab(
-                text: "Trains",
+                text: "Ejemplo",
                 icon: Icon(Icons.fact_check),
               ),
-              Tab(text: "Hotels", icon: Icon(Icons.code)),
+              Tab(text: "Codigo", icon: Icon(Icons.code)),
             ],
           ),
           title: Text('Flutter TabBar'),

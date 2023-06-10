@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class AlertScreen extends StatefulWidget {
   const AlertScreen({super.key});
-  _WidgetState createState() => _WidgetState();
+  _AlertScreen createState() => _AlertScreen();
 }
 
-class _WidgetState extends State<AlertScreen> {
+class _AlertScreen extends State<AlertScreen> {
   int _value = 1;
   @override
   Widget build(BuildContext context) {

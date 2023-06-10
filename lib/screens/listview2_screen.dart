@@ -4,31 +4,60 @@ class ListViews2creens extends StatelessWidget {
   var car = ["mustang", "ford", "chevrolet", " buggati"];
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
         appBar: AppBar(
-          title: Text('ListView tipo 2'),
+          bottom: TabBar(
+            tabs: [
+              Tab(
+                text: "Ejemplo",
+                icon: Icon(Icons.fact_check),
+              ),
+              Tab(text: "Codigo", icon: Icon(Icons.code)),
+            ],
+          ),
+          title: Text('Flutter ListView tipo 2'),
         ),
-        body: ListView(
-          children: [
+        body: TabBarView(
+          children: <Widget>[
+            ListView(
+              children: [
 //spread
-            ...car
-                .map((games) => ListTile(
-                      title: Text(games),
-                      trailing:
-                          Icon(Icons.arrow_forward_ios, color: Colors.pink),
-                      onTap: () {
-                        var seleccion = car;
-                        print(seleccion);
-                      },
-                    ))
-                .toList(),
-            const Divider(
-              height: 20,
-              thickness: 2,
-              indent: 20,
-              endIndent: 20,
-            )
+                ...car
+                    .map((car) => ListTile(
+                          title: Text(car),
+                          trailing:
+                              Icon(Icons.arrow_forward_ios, color: Colors.pink),
+                          onTap: () {
+                            var seleccion = car;
+                            print(seleccion);
+                          },
+                        ))
+                    .toList(),
+                const Divider(
+                  height: 20,
+                  thickness: 4,
+                  indent: 20,
+                  endIndent: 20,
+                )
+              ],
+              physics: const AlwaysScrollableScrollPhysics(),
+              padding: const EdgeInsets.all(10),
+            ),
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset("assets/List.jpeg"),
+                  Text(" codigo List view   "),
+                ],
+                //https://codeimg.io/
+              ),
+            ),
           ],
-        ));
+        ),
+      ),
+    );
   }
 }

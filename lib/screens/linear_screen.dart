@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class LinearScreen extends StatefulWidget {
   const LinearScreen({super.key});
-  _WidgetState createState() => _WidgetState();
+  _LinearScreen createState() => _LinearScreen();
 }
 
-class _WidgetState extends State<LinearScreen> {
+class _LinearScreen extends State<LinearScreen> {
   int _value = 1;
   @override
   Widget build(BuildContext context) {

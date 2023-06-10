@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 //import 'widgets/add_entry_dialog.dart';
 class SnackBarScreen extends StatefulWidget {
   const SnackBarScreen({super.key});
-  _CirProgresScreenState createState() => _CirProgresScreenState();
+  _SnackBarScreen createState() => _SnackBarScreen();
 }
 
-class _CirProgresScreenState extends State<SnackBarScreen> {
+class _SnackBarScreen extends State<SnackBarScreen> {
   var _selected = "";
   var _test = "Full Screen";
 

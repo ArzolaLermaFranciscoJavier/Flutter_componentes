@@ -3,10 +3,10 @@ import 'package:fluttercomponentes/theme/app_theme.dart';
 
 class TextScreen extends StatefulWidget {
   const TextScreen({super.key});
-  _WidgetState createState() => _WidgetState();
+  _TextScreen createState() => _TextScreen();
 }
 
-class _WidgetState extends State<TextScreen> {
+class _TextScreen extends State<TextScreen> {
   @override
   String val = "";
   Widget build(BuildContext context) {

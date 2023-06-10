@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class SliderScreen extends StatefulWidget {
   const SliderScreen({super.key});
-  _WidgetState createState() => _WidgetState();
+  _SliderScreen createState() => _SliderScreen();
 }
 
-class _WidgetState extends State<SliderScreen> {
+class _SliderScreen extends State<SliderScreen> {
   bool _value = false;
   double val = 1;
   @override

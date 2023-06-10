@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:fluttercomponentes/theme/app_theme.dart';
 
 class ButtonScreen extends StatefulWidget {
   const ButtonScreen({super.key});
-  _WidgetState createState() => _WidgetState();
+  _ButtonScreen createState() => _ButtonScreen();
 }
 
-class _WidgetState extends State<ButtonScreen> {
+class _ButtonScreen extends State<ButtonScreen> {
   int _value = 1;
   @override
   Widget build(BuildContext context) {
@@ -32,7 +33,7 @@ class _WidgetState extends State<ButtonScreen> {
               children: <Widget>[
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Colors.amber,
+                  color: AppTheme.primary,
                   child: TextButton(
                     child: Text("boton de texto"),
                     onPressed: () {},
@@ -40,7 +41,7 @@ class _WidgetState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Colors.amber,
+                  color: AppTheme.primary,
                   child: OutlinedButton(
                     child: Text("outline boton"),
                     onPressed: () {},
@@ -48,7 +49,7 @@ class _WidgetState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Colors.amber,
+                  color: AppTheme.primary,
                   child: ElevatedButton(
                     child: Text(" boton elevado"),
                     onPressed: () {},
@@ -56,7 +57,7 @@ class _WidgetState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Colors.amber,
+                  color: AppTheme.primary,
                   child: FloatingActionButton(
                     child: Text("boton float"),
                     onPressed: () {},
@@ -64,7 +65,7 @@ class _WidgetState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Colors.amber,
+                  color: AppTheme.primary,
                   child: IconButton(
                     icon: Icon(Icons.play_arrow),
                     onPressed: () {},
@@ -72,7 +73,7 @@ class _WidgetState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Colors.amber,
+                  color: AppTheme.primary,
                   child: DropdownButton(
                       value: _value,
                       items: [
@@ -94,7 +95,7 @@ class _WidgetState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Colors.amber,
+                  color: AppTheme.primary,
                   child: PopupMenuButton(
                       itemBuilder: (context) => [
                             PopupMenuItem(

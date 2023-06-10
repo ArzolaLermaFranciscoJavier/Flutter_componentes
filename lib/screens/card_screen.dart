@@ -3,10 +3,10 @@ import 'package:fluttercomponentes/theme/app_theme.dart';
 
 class CardScreen extends StatefulWidget {
   const CardScreen({super.key});
-  _WidgetState createState() => _WidgetState();
+  _CardScreen createState() => _CardScreen();
 }
 
-class _WidgetState extends State<CardScreen> {
+class _CardScreen extends State<CardScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(

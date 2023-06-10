@@ -3,10 +3,10 @@ import 'package:fluttercomponentes/theme/app_theme.dart';
 
 class GridScreen extends StatefulWidget {
   const GridScreen({super.key});
-  _WidgetState createState() => _WidgetState();
+  _GridScreen createState() => _GridScreen();
 }
 
-class _WidgetState extends State<GridScreen> {
+class _GridScreen extends State<GridScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
